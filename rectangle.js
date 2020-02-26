@@ -1,10 +1,10 @@
 $(function(){
     //get dom ele
-    var $width=$("#width"),
-        $height=$("#height"),
-        $btnCal=$("#calculate"),
-        $perimeter=$("#perimeter"),
-        $area=$("#area");
+    var $width=$('#width'),
+        $height=$('#height'),
+        $btnCal=$('#calculate'),
+        $perimeter=$('#perimeter'),
+        $area=$('#area');
     //calc button click event
     $btnCal.click(function(){
         //去掉浮点函数
@@ -20,6 +20,6 @@ $(function(){
         //output
         $perimeter.val(p);
         $area.val(a);
-    })
+    });
     
-})
+});
