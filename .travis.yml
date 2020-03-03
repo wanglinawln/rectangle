@@ -3,8 +3,8 @@ node_js:
   - "node"
 
 after_script:
-  - gitbook build
-  - cd ./_book
+  - grunt release
+  - cd ./dist
   - git init
   - git config user.name "${USER_NAME}"
   - git config user.email "${USER_EMAIL}"
