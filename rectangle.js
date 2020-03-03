@@ -16,7 +16,7 @@ $(function(){
             h=Number($height.val());
         //calculate
         var p=roundFractional(2*(w+h),2),
-        a=roundFractional(w*h,2);
+            a=roundFractional(w*h,2);
         // var rect =rectangle();
         // var p=roundFractional(rect.perimeter(w,h),2),
         //     a=roundFractional(rect.area(w,h),2);
