@@ -1,3 +1,4 @@
+/*global rectangle:true*/
 $(function(){
     //get dom ele
     var $width=$('#width'),
