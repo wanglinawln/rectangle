@@ -49,6 +49,12 @@ module.exports = function(grunt) {
                 }
             }
         },
+        useminPrepare: {
+            html: 'index.html',
+            options: {
+              dest: 'dist'
+            }
+        },
         usemin:{
             html:['dist/index.html']
         },
@@ -83,5 +89,5 @@ module.exports = function(grunt) {
 
     grunt.registerTask('lint', ['htmlhint', 'csslint', 'eslint']);
     grunt.registerTask('unitTest', ['mocha']);
-    grunt.registerTask('release', ['copy', 'concat', 'uglify', 'usemin', 'cssmin', 'htmlmin', 'clean']);
+    grunt.registerTask('release', ['copy', 'useminPrepare', 'concat', 'uglify', 'usemin', 'cssmin', 'htmlmin', 'clean']);
 };
