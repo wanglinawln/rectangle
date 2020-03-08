@@ -59,15 +59,11 @@ module.exports = function(grunt) {
             html:['dist/index.html']
         },
         concat:{
-            options:{
-                separator:';'
-            },
             js:{
                 src:['rectangle.js','calc.js'],
                 dest:'dist/bundle.js'
             }
         },
-        clean:['dist/bundle.js','.tmp'],
         copy:{
             html:{
                 src:'./index.html',
@@ -85,9 +81,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-usemin');
-    grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.registerTask('lint', ['htmlhint', 'csslint', 'eslint']);
     grunt.registerTask('unitTest', ['mocha']);
-    grunt.registerTask('release', ['copy', 'useminPrepare', 'concat', 'uglify', 'usemin', 'cssmin', 'htmlmin', 'clean']);
+    grunt.registerTask('release', ['copy', 'useminPrepare', 'concat', 'uglify', 'usemin', 'cssmin', 'htmlmin']);
 };
