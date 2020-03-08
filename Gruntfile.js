@@ -52,7 +52,7 @@ module.exports = function(grunt) {
         useminPrepare: {
             html: 'index.html',
             options: {
-              dest: 'dist'
+                dest: 'dist'
             }
         },
         usemin:{
