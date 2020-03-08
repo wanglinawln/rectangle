@@ -10,4 +10,4 @@ function rectangle(){
             return width*height;
         }
     };
-};
+}
