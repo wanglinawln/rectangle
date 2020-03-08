@@ -4,7 +4,7 @@
   "description": "",
   "main": "rectangle.js",
   "scripts": {
-    "test": "grunt release"
+    "test": "grunt lint && grunt unitTest"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "grunt": "^1.0.4",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-csslint": "^2.0.0",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-htmlmin": "^3.1.0",
@@ -28,6 +30,7 @@
     "grunt-htmlhint": "^0.9.13",
     "grunt-mocha": "^0.4.12",
     "grunt-mocha-istanbul": "^5.0.2",
+    "grunt-usemin": "^3.1.1",
     "istanbul": "^0.4.5",
     "mocha": "^7.1.0"
   }
