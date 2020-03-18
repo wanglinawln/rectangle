@@ -1,4 +1,5 @@
 /*global module:true*/
+/*eslint linebreak-style: ["error", "unix"]*/
 module.exports = function(grunt) {
     grunt.initConfig({
         htmlhint: {

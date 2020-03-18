@@ -1,4 +1,5 @@
 /* exported rectangle,validate,isLegalKey*/
+/*eslint linebreak-style: ["error", "unix"]*/
 
 function rectangle(){
     return {
