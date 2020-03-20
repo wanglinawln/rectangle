@@ -1,4 +1,4 @@
-/*global rectangle,validate,isLegalKey:true*/
+/*global rectangle,validate,isLegalKey,$forkMeGH, $bszPageFooter:true*/
 $(function(){
     //get dom ele
     var $width=$('#width'),
@@ -6,6 +6,9 @@ $(function(){
         $btnCal=$('#calculate'),
         $perimeter=$('#perimeter'),
         $area=$('#area');
+
+    $forkMeGH.show('https://github.com/wanglinawln/rectangle');
+    $bszPageFooter.show('body');
     //calc button click event
     $btnCal.click(function(){
         //去掉浮点函数
